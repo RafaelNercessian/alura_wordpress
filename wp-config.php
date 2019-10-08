@@ -58,7 +58,8 @@ define( 'AUTH_SALT',        '<4~P)dQARqvS~9{r{`| 39iL->4#g^y^CeI`hVFru&tq3~Z@*dP
 define( 'SECURE_AUTH_SALT', 'hHG.um}]y?SU.^@vp_NC}nkK1J~?8#&VLFL*nN#{O:}oUGAT,mYM^Dv|:@uzbqD7' );
 define( 'LOGGED_IN_SALT',   'rtRb.Z1ZE=VtW/G #]&=UA#2jjI5.S.}}`ZtEBKC,7Q<gjtX8H2NYu&kzQW.nv;8' );
 define( 'NONCE_SALT',       'jnfdKFsJ^2:zBPlzD |gOlKnOJ@<AE]<SsVpMK%-r8]~N&I{:3_acg4?w**%0U>-' );
-
+define( 'WPMS_ON', true );
+define( 'WPMS_SMTP_PASS', 'cu2y12w287' );
 /**#@-*/
 
 /**
