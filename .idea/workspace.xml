@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c5480ea-adc3-4789-ad07-c5d92264f104" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha/page.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570482115705</updated>
       <workItem from="1570482116772" duration="13000" />
-      <workItem from="1570498883077" duration="22173000" />
+      <workItem from="1570498883077" duration="22418000" />
     </task>
     <servers />
   </component>

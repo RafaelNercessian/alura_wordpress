@@ -23,9 +23,9 @@ function pagina_local_palestra()
         <h1>Local Palestras</h1>
         <form method="post" action="options.php">
             <?php
-                do_settings_sections( 'local-palestra' );
-                settings_fields('local-palestra-settings');
-                submit_button();
+            do_settings_sections('local-palestra');
+            settings_fields('local-palestra-settings');
+            submit_button();
             ?>
         </form>
     </div>
@@ -33,7 +33,8 @@ function pagina_local_palestra()
 }
 
 add_action('admin_init', 'mostra_endereco_palestra');
-function mostra_endereco_palestra(){
+function mostra_endereco_palestra()
+{
     add_settings_section(
         'insere-local-palestra-secao-1',
         'Configurações local palestra',
@@ -55,13 +56,15 @@ function mostra_endereco_palestra(){
 
 }
 
-function mostra_conteudo_endereco_pagina_admin(){
-    $input = get_option( 'insere-local-palestra-endereco' );
+function mostra_conteudo_endereco_pagina_admin()
+{
+    $input = get_option('insere-local-palestra-endereco');
     echo '<input type="text" id="insere-local-palestra-endereco" name="insere-local-palestra-endereco" value="' . $input . '" />';
 }
 
 add_action('admin_init', 'mostra_cidade_palestra');
-function mostra_cidade_palestra(){
+function mostra_cidade_palestra()
+{
     add_settings_field(
         'insere-local-palestra-cidade',
         'Cidade',
@@ -76,13 +79,15 @@ function mostra_cidade_palestra(){
 
 }
 
-function mostra_conteudo_cidade_pagina_admin(){
-    $input = get_option( 'insere-local-palestra-cidade' );
+function mostra_conteudo_cidade_pagina_admin()
+{
+    $input = get_option('insere-local-palestra-cidade');
     echo '<input type="text" id="insere-local-palestra-cidade" name="insere-local-palestra-cidade" value="' . $input . '" />';
 }
 
 add_action('admin_init', 'insere_google_maps_datepicker');
-function insere_google_maps_datepicker(){
+function insere_google_maps_datepicker()
+{
     add_settings_field(
         'insere-local-palestra-data',
         'Data',
@@ -96,13 +101,15 @@ function insere_google_maps_datepicker(){
     );
 }
 
-function mostra_conteudo_data_pagina_admin(){
-    $input = get_option( 'insere-local-palestra-cidade' );
-    echo '<input type="date" id="insere-local-palestra-data" name="insere-local-palestra-data[datepicker]" value="" class="example-datepicker" />';
+function mostra_conteudo_data_pagina_admin()
+{
+    $input = get_option('insere-local-palestra-data');
+    echo '<input type="date" id="insere-local-palestra-data" name="insere-local-palestra-data[datepicker]" value="' . $input["datepicker"] . '" class="example-datepicker" />';
 }
 
-add_action( 'admin_enqueue_scripts', 'enqueue_date_picker' );
-function enqueue_date_picker(){
+add_action('admin_enqueue_scripts', 'enqueue_date_picker');
+function enqueue_date_picker()
+{
     wp_enqueue_script(
         'field-date-js',
         'Field_Date.js',
@@ -111,5 +118,5 @@ function enqueue_date_picker(){
         true
     );
 
-    wp_enqueue_style( 'jquery-ui-datepicker' );
+    wp_enqueue_style('jquery-ui-datepicker');
 }
