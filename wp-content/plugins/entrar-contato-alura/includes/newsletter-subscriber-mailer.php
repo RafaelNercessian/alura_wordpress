@@ -30,5 +30,5 @@ try {
     $mail->Body    = 'Um novo contato com email ' . trim($_POST['email-contato']) . ' tem interesse na palestra. Entre em contato com ele / ela o mais rápido possível';
     $mail->send();
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo  $e->getMessage();
 }

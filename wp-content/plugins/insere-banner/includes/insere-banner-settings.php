@@ -89,6 +89,5 @@ function verifica_arquivo_enviado()
     $urls = wp_handle_upload($_FILES["insere-imagem-banner"], array('test_form' => FALSE,
         'mimes' => array('png' => 'image/png', 'jpeg' => 'images/jpeg','jpg'=>'image/jpeg')));
     $temp = $urls["url"];
-    error_log("Valor do tmp " . print_r($temp,1));
     return $temp;
 }

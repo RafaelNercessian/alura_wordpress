@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c5480ea-adc3-4789-ad07-c5d92264f104" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/js/calculate_countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/js/jquery.countdown.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/css/google_maps_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/css/google_maps_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-scripts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-shortcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/entrar-contato-alura/includes/newsletter-subscriber-mailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/entrar-contato-alura/includes/newsletter-subscriber-mailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/insere-banner/includes/insere-banner-settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/insere-banner/includes/insere-banner-settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha/css/flexbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha/css/flexbox.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha/footer.php" afterDir="false" />
@@ -82,7 +79,7 @@
       <updated>1570482115705</updated>
       <workItem from="1570482116772" duration="13000" />
       <workItem from="1570498883077" duration="41478000" />
-      <workItem from="1570616627699" duration="21262000" />
+      <workItem from="1570616627699" duration="24817000" />
     </task>
     <servers />
   </component>
