@@ -35,9 +35,8 @@ class Newsletter_Subscriber_Widget extends WP_Widget
                     <button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
                 </div>
             </fieldset>
-            <input type="hidden" name="titulo" value="<?= $instance['titulo'] ?>">
+            <input type="hidden" name="senha" value="<?= $instance['senha'] ?>">
             <input type="hidden" name="destinatario" value="<?= $instance['destinatario'] ?>">
-            <input type="hidden" name="assunto" value="<?= $instance['assunto'] ?>">
         </form>
         <?php
     }
@@ -49,24 +48,19 @@ class Newsletter_Subscriber_Widget extends WP_Widget
      */
     public function form($instance)
     {
-        $titulo = !empty($instance['titulo']) ? esc_attr($instance['titulo']) : __('Contato Alurinha', 'ns_domain');
         $destinatario = $instance['destinatario'];
-        $assunto = !empty($instance['assunto']) ? esc_attr($instance['assunto']) : __('Você tem um novo contato na Alurinha', 'ns_domain');
+        $senha = $instance['senha'];
+        error_log($senha);
         ?>
-        <p>
-            <label for="<?= $this->get_field_id('titulo') ?>"><?= _e('Título:'); ?></label><br>
-            <input type="text" id="<?= $this->get_field_id('titulo') ?>" name="<?= $this->get_field_name('titulo') ?>"
-                   value="<?= $titulo ?>">
-        </p>
         <p>
             <label for="<?= $this->get_field_id('destinatario') ?>"><?= _e('Destinatário:'); ?></label><br>
             <input type="text" id="<?= $this->get_field_id('destinatario') ?>"
                    name="<?= $this->get_field_name('destinatario') ?>" value="<?= $destinatario ?>">
         </p>
         <p>
-            <label for="<?= $this->get_field_id('assunto') ?>"><?= _e('Assunto:'); ?></label><br>
-            <input type="text" id="<?= $this->get_field_id('assunto') ?>" name="<?= $this->get_field_name('assunto') ?>"
-                   value="<?= $assunto ?>">
+            <label for="<?= $this->get_field_id('senha') ?>"><?= _e('Senha:'); ?></label><br>
+            <input type="password" id="<?= $this->get_field_id('senha') ?>" name="<?= $this->get_field_name('senha') ?>"
+                   value="<?= $senha ?>">
         </p>
         <?php
     }
@@ -82,9 +76,8 @@ class Newsletter_Subscriber_Widget extends WP_Widget
     public function update($new_instance, $old_instance)
     {
         $instance = array(
-            'titulo' => !empty($new_instance['titulo']) ? strip_tags($new_instance['titulo']) : '',
             'destinatario' => !empty($new_instance['destinatario']) ? strip_tags($new_instance['destinatario']) : '',
-            'assunto' => !empty($new_instance['assunto']) ? strip_tags($new_instance['assunto']) : ''
+            'senha' => !empty($new_instance['senha']) ? strip_tags($new_instance['senha']) : '',
         );
         return $instance;
     }

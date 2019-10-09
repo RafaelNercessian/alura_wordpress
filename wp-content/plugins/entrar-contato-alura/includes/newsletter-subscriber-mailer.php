@@ -9,30 +9,26 @@ require 'vendor/autoload.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
-
+error_log(print_r($_POST,1));
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
-    $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'tls://smtp.gmail.com:587';                    // Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'rafael.nercessian.auckland@gmail.com';                     // SMTP username
-    $mail->Password   = 'cu2y12w287';                               // SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
+    $mail->isSMTP();
+    $mail->Host       = 'tls://smtp.gmail.com:587';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = trim($_POST['destinatario']);
+    $mail->Password   = trim($_POST['senha']);
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
 
     //Recipients
-    $mail->setFrom('from@example.com', 'Mailer');
-    $mail->addAddress('rafanercessian@gmail.com', 'Rafael Nercessian');     // Add a recipient
+    $mail->setFrom(trim($_POST['email-contato']));
+    $mail->addAddress(trim($_POST['destinatario']));
 
     // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
+    $mail->isHTML(true);
+    $mail->Subject = 'Cadastro Palestra';
+    $mail->Body    = 'Um novo contato com email ' . trim($_POST['email-contato']) . ' tem interesse na palestra. Entre em contato com ele / ela o mais rápido possível';
     $mail->send();
-    echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
