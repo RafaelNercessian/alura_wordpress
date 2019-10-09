@@ -9,3 +9,4 @@ License: GPLv2 or later
 */
 
 require_once plugin_dir_path(__FILE__).'/includes/insere-banner-settings.php';
+require_once plugin_dir_path(__FILE__).'/includes/insere-banner-scripts.php';
