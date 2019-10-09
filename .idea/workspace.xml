@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c5480ea-adc3-4789-ad07-c5d92264f104" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/patrocinadores-palestras/images/caelum.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/patrocinadores-palestras/images/cdc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/patrocinadores-palestras/images/hipsters.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/patrocinadores-palestras/includes/patrocinadores-palestras-widget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/patrocinadores-palestras/patrocinadores-palestras.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/insere-google-maps-palestra/includes/insere-google-maps-palestra-shortcode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/alurinha/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/alurinha/functions.php" afterDir="false" />
@@ -28,17 +32,21 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/wp-content/themes/alurinha" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RtMojBsxOdQsCKPA2RJchBCNe8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/plugins/patrocinadores-palestras/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\alura\wp-content\plugins\patrocinadores-palestras\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\alura\wp-content\plugins\patrocinadores-palestras\includes" />
       <recent name="C:\wamp64\www\alura\wp-content\plugins\entrar-contato-alura\includes" />
       <recent name="C:\wamp64\www\alura\wp-content\themes\alurinha" />
     </key>
@@ -66,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570482115705</updated>
       <workItem from="1570482116772" duration="13000" />
-      <workItem from="1570498883077" duration="32347000" />
+      <workItem from="1570498883077" duration="41478000" />
     </task>
     <servers />
   </component>
