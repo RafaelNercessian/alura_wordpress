@@ -28,7 +28,7 @@ class Newsletter_Subscriber_Widget extends WP_Widget
               action="<?= plugins_url() . '/entrar-contato-alura/includes/newsletter-subscriber-mailer.php' ?>"
               method="post">
             <fieldset>
-                <legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre em contato conosco</legend>
+                <legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Cadastre para a palestra</legend>
                 <div class="rodapePrincipal-contatoForm-fieldset">
                     <input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato"
                            id="email-contato">
